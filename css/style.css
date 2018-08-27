@@ -1,0 +1,154 @@
+
+body {
+	font-family: Tahoma, sans-serif;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+header {
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: 3fr 1fr;
+	margin: 30px 0px;
+}
+
+.header__name {
+	
+}
+
+.header__author {
+	justify-self: end;
+}
+
+main {
+	display: grid;
+	grid-gap: 15px;
+	grid-auto-rows: minmax(200px, 200px);
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main .item {
+	padding: 15px;
+	background: #ccc;
+}
+
+main .item:nth-child(7) {
+	background: #eee;
+}
+
+
+
+
+
+
+// .grid {
+// 	display: grid;
+// 	grid-template-columns: minmax(150px, 250px) 1fr 1fr; /* создаем 3 колонки по фракциям элементы которого идут друг за другом */
+// 	/* или 3 колонки по 1 фракции */
+// 	grid-template-columns: repeat (3, 1fr); /* или repeat (2, 1fr 2fr); где две колонки в каждой из которых есть 1fr 2fr */
+// 	grid-template-rows: 200px 150px 100px; /* высота рядов */
+// 	grid-auto-rows: minmax(100px, auto); /* высота рядов min 100px если больше то подстраивается */
+// 	grid-column-gap: 15px; /* растояние между колонками */
+// 	grid-row-gap: 15px; /* растояние между рядами */
+// 	/*grid-gap: 15px;*/ /* растояние между рядами и колонками */
+// 	grid-auto-flow: column; /* меняем порядок элементов  по умолчанию row*/
+// }
+
+// .grid-2 {
+// 	display: grid;
+
+// 	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* или auto-fit что бы убрать простанство и рястянуть на все ширину */
+// 	grid-template-rows: 200px;
+// 	/* или */
+// 	grid-template: 200px / repeat(auto-fill, minmax(150px, 1fr)); /* ряды / колонки */
+
+// 	grid-gap: 15px;
+// }
+// .grid-2 .item:nth-child(1) {
+// 	grid-column-start: 1;
+// 	grid-column-end: -1; 
+// 	/* или */
+// 	grid-column: 1 / -1;
+// 	grid-row: 3; /* меняем местами колонки */
+// }
+
+// .grid-2 .item:nth-child(2) {
+// 	grid-column: 1;
+// 	grid-row: 2;
+// }
+// .grid-2 .item:nth-child(3) {
+// 	grid-column: 1 / 4;
+// 	grid-row: 1;
+// }
+// .item {
+// 	padding: 15px;
+// 	background: #ccc;
+// }
+
+// .item:nth-child(2n) {
+// 	background: #ddd;
+// }
+
+// .grid-3 {
+// 	display: grid;
+// 	grid-template-columns: 1fr 1fr 1fr ;
+// 	grid-temlate-rows: 200px;
+// 	grid-gap: 15px;
+// 	/* управления колонками */
+// 	justify-items: center; /* stretch по умолчанию */
+// 	align-items: end;
+
+// }
+
+// .grid-3 .item:nth-child(1) {
+// 	justify-self: start;
+// 	align-self: stretch;
+// }
+
+
+// .grids {
+// 	display: grid;
+// 	grid-gap: 15px;
+// 	grid-template-areas: 
+// 		"header"
+// 		"article"
+// 		"aside"
+// 		"footer";
+
+// }
+
+// header {
+// 	grid-area: header;
+// }
+
+// article {
+// 	grid-area: article;
+// }
+
+// aside {
+// 	grid-area: aside;
+// }
+
+// footer {
+// 	grid-area: footer;
+// }
+
+// @media (min-width: 640px) {
+// 	.grids {
+// 		grid-template-columns: 2fr 4fr;
+// 		grid-template-areas:
+// 			"header header"
+// 			"article aside"
+// 			". footer";
+// 		grid-template-areas:
+// 			"header header"
+// 			"aside article"
+// 			"aside footer"
+// 	}
+// }
+
+
+
+
